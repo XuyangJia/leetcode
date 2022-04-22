@@ -1,3 +1,16 @@
 {
-  "svn.ignoreMissingSvnWarning": true
+  "svn.ignoreMissingSvnWarning": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.nodeEnv": "",
+  "eslint.packageManager": "pnpm",
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "crlf",
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 }
