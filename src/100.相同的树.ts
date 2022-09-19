@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=94 lang=typescript
+ * @lc app=leetcode.cn id=100 lang=typescript
  *
- * [94] 二叉树的中序遍历
+ * [100] 相同的树
  */
 
 // Definition for a binary tree node.
@@ -17,13 +17,10 @@ class TreeNode {
 }
 
 // @lc code=start
-function inorderTraversal(root: TreeNode | null): number[] {
-  if (root === null) return []
-  return [
-    inorderTraversal(root.left),
-    root.val,
-    inorderTraversal(root.right)
-  ].flat()
+
+function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
+  if (!p || !q) return p === q
+  return p.val === q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right)
 };
 // @lc code=end
 
